@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import os
 
-REAL_DIR = "images"
-SKETCH_DIR = "sketch_photos"
+REAL_DIR = "Images"
+SKETCH_DIR = "Sketch_photos"
 os.makedirs(SKETCH_DIR, exist_ok=True)
 
 def photo2sketch(real_path, sketch_path=None):
