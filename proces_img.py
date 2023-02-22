@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-REAL_DIR = "image"
+REAL_DIR = "images"
 SKETCH_DIR = "sketch_photos"
 os.makedirs(SKETCH_DIR, exist_ok=True)
 
