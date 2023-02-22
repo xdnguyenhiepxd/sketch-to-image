@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-REAL_DIR = "street"
+REAL_DIR = "image"
 SKETCH_DIR = "sketch_photos"
 os.makedirs(SKETCH_DIR, exist_ok=True)
 
@@ -40,7 +40,7 @@ def process_data(size, real_dir, sketch_dir):
         return "OK!"
 
     num_data = len(os.listdir(real_dir))
-    num_val = 0
+    num_val = 1000
     num_train = num_data - num_val
 
     imgs = os.listdir(real_dir)
@@ -81,4 +81,4 @@ if __name__ == "__main__":
                 real_path = os.path.join(REAL_DIR, real)
                 photo2sketch(real_path)
 
-    process_data(256, REAL_DIR, SKETCH_DIR)
+    process_data(1024, REAL_DIR, SKETCH_DIR)
